@@ -18,3 +18,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer{
+    .nav-active{
+       @apply shadow-soft-xl rounded-lg bg-white dark:bg-gray-800 font-semibold !text-slate-700 dark:!text-slate-200;
+    }
+    .nav-active > div{
+        @apply bg-gradient-to-tl from-purple-700 to-pink-500 ;
+    }
+
+    .nav-fill {
+        @apply fill-slate-800 dark:fill-slate-300;
+    }
+    .nav-active .nav-fill {
+        @apply fill-inherit;
+    }
+}
