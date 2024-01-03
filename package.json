@@ -3,7 +3,7 @@
     "version": "1.0.5",
     "description": "",
     "scripts": {
-        "build": "tailwindcss build -i src/styles.css -o build/assets/css/soft-ui-dashboard-tailwind.css"
+        "build": "tailwindcss build -i src/styles.css -o build/assets/css/main.css"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.2",
@@ -13,6 +13,7 @@
     },
     "dependencies": {
         "cli": "^1.0.1",
+        "flowbite": "^2.2.1",
         "highlight.js": "^11.4.0",
         "tailwindcss-transforms": "^2.2.0"
     }

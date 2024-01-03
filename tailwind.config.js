@@ -2,7 +2,7 @@ const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   mode: "jit",
-  content: ["./build/**/*.{html,js}"],
+  content: ["./build/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
   presets: [],
   darkMode: "class",
   theme: {
@@ -24,6 +24,20 @@ module.exports = {
       transparent: colors.transparent,
       black: colors.black,
       white: colors.white,
+
+      primary: {
+        50: "#eff6ff",
+        100: "#dbeafe",
+        200: "#bfdbfe",
+        300: "#93c5fd",
+        400: "#60a5fa",
+        500: "#3b82f6",
+        600: "#2563eb",
+        700: "#1d4ed8",
+        800: "#1e40af",
+        900: "#1e3a8a",
+        950: "#172554",
+      },
 
       slate: {
         DEFAULT: colors.slate,
@@ -1416,6 +1430,9 @@ module.exports = {
   ],
 
   plugins: [
+    require('flowbite/plugin')({
+      charts: true,
+  }),
     plugin(function ({ addComponents, addUtilities }) {
       addUtilities({
         ".transform3d": {
@@ -1477,7 +1494,7 @@ module.exports = {
           "margin-bottom": ".5rem",
           color: {
             light: "#344767",
-            dark: "#dee4ee"
+            dark: "#dee4ee",
           },
         },
 
