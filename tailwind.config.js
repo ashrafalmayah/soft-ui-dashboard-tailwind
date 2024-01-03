@@ -466,25 +466,71 @@ module.exports = {
     backgroundImage: ({ theme }) => ({
       none: "none",
       "gradient-to-t": "linear-gradient(to top, var(--tw-gradient-stops))",
-      "gradient-to-tr": "linear-gradient(to top right, var(--tw-gradient-stops))",
+      "gradient-to-tr":
+        "linear-gradient(to top right, var(--tw-gradient-stops))",
       "gradient-to-r": "linear-gradient(to right, var(--tw-gradient-stops))",
-      "gradient-to-br": "linear-gradient(to bottom right, var(--tw-gradient-stops))",
+      "gradient-to-br":
+        "linear-gradient(to bottom right, var(--tw-gradient-stops))",
       "gradient-to-b": "linear-gradient(to bottom, var(--tw-gradient-stops))",
-      "gradient-to-bl": "linear-gradient(to bottom left, var(--tw-gradient-stops))",
+      "gradient-to-bl":
+        "linear-gradient(to bottom left, var(--tw-gradient-stops))",
       "gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
-      "gradient-to-tl": "linear-gradient(to top left, var(--tw-gradient-stops))",
+      "gradient-to-tl":
+        "linear-gradient(to top left, var(--tw-gradient-stops))",
 
-      "gradient-fuchsia": "linear-gradient(310deg," + theme("colors.purple.700") + "," + theme("colors.pink.500") + ")",
-      "gradient-cyan": "linear-gradient(310deg," + theme("colors.blue.600") + "," + theme("colors.cyan.400") + ")",
-      "gradient-orange": "linear-gradient(310deg," + theme("colors.red.500") + "," + theme("colors.yellow.400") + ")",
-      "gradient-red": "linear-gradient(310deg," + theme("colors.red.600") + "," + theme("colors.rose.400") + ")",
-      "gradient-lime": "linear-gradient(310deg," + theme("colors.green.600") + "," + theme("colors.lime.400") + ")",
-      "gradient-slate": "linear-gradient(310deg," + theme("colors.slate.600") + "," + theme("colors.slate.300") + ")",
-      "gradient-dark-gray": "linear-gradient(310deg," + theme("colors.gray.900") + "," + theme("colors.slate.800") + ")",
-      "gradient-gray": "linear-gradient(310deg," + theme("colors.gray.400") + "," + theme("colors.gray.100") + ")",
+      "gradient-fuchsia":
+        "linear-gradient(310deg," +
+        theme("colors.purple.700") +
+        "," +
+        theme("colors.pink.500") +
+        ")",
+      "gradient-cyan":
+        "linear-gradient(310deg," +
+        theme("colors.blue.600") +
+        "," +
+        theme("colors.cyan.400") +
+        ")",
+      "gradient-orange":
+        "linear-gradient(310deg," +
+        theme("colors.red.500") +
+        "," +
+        theme("colors.yellow.400") +
+        ")",
+      "gradient-red":
+        "linear-gradient(310deg," +
+        theme("colors.red.600") +
+        "," +
+        theme("colors.rose.400") +
+        ")",
+      "gradient-lime":
+        "linear-gradient(310deg," +
+        theme("colors.green.600") +
+        "," +
+        theme("colors.lime.400") +
+        ")",
+      "gradient-slate":
+        "linear-gradient(310deg," +
+        theme("colors.slate.600") +
+        "," +
+        theme("colors.slate.300") +
+        ")",
+      "gradient-dark-gray":
+        "linear-gradient(310deg," +
+        theme("colors.gray.900") +
+        "," +
+        theme("colors.slate.800") +
+        ")",
+      "gradient-gray":
+        "linear-gradient(310deg," +
+        theme("colors.gray.400") +
+        "," +
+        theme("colors.gray.100") +
+        ")",
 
-      "gradient-horizontal-dark": "linear-gradient(90deg,transparent,rgba(0,0,0,.4),transparent)",
-      "gradient-horizontal-light": "linear-gradient(90deg,transparent,rgba(0,0,0,.1),transparent)",
+      "gradient-horizontal-dark":
+        "linear-gradient(90deg,transparent,rgba(0,0,0,.4),transparent)",
+      "gradient-horizontal-light":
+        "linear-gradient(90deg,transparent,rgba(0,0,0,.1),transparent)",
     }),
     backgroundOpacity: ({ theme }) => theme("opacity"),
     backgroundPosition: {
@@ -560,13 +606,17 @@ module.exports = {
     },
     boxShadow: {
       "soft-xxs": "0 1px 5px 1px #ddd",
-      "soft-xs": "0 3px 5px -1px rgba(0,0,0,.09),0 2px 3px -1px rgba(0,0,0,.07)",
-      "soft-sm": "0 .25rem .375rem -.0625rem hsla(0,0%,8%,.12),0 .125rem .25rem -.0625rem hsla(0,0%,8%,.07)",
-      "soft-md": "0 4px 7px -1px rgba(0,0,0,.11),0 2px 4px -1px rgba(0,0,0,.07)",
+      "soft-xs":
+        "0 3px 5px -1px rgba(0,0,0,.09),0 2px 3px -1px rgba(0,0,0,.07)",
+      "soft-sm":
+        "0 .25rem .375rem -.0625rem hsla(0,0%,8%,.12),0 .125rem .25rem -.0625rem hsla(0,0%,8%,.07)",
+      "soft-md":
+        "0 4px 7px -1px rgba(0,0,0,.11),0 2px 4px -1px rgba(0,0,0,.07)",
       "soft-lg": "0 2px 12px 0 rgba(0,0,0,.16)",
       "soft-xl": "0 20px 27px 0 rgba(0,0,0,0.05)",
       "soft-2xl": "0 .3125rem .625rem 0 rgba(0,0,0,.12)",
-      "soft-3xl": "0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)",
+      "soft-3xl":
+        "0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)",
       "soft-primary-outline": "0 0 0 2px #e9aede",
       blur: "inset 0 0 1px 1px hsla(0,0%,100%,.9),0 20px 27px 0 rgba(0,0,0,.05)",
       DEFAULT: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
@@ -722,7 +772,10 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Open Sans"],
-      serif: ['SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace', "serif"],
+      serif: [
+        'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+        "serif",
+      ],
       body: ["Roboto", "sans-serif"],
       awesome: ["FontAwesome"],
     },
@@ -1246,8 +1299,10 @@ module.exports = {
     transitionProperty: {
       none: "none",
       all: "all",
-      DEFAULT: "color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter",
-      colors: "color, background-color, border-color, text-decoration-color, fill, stroke",
+      DEFAULT:
+        "color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter",
+      colors:
+        "color, background-color, border-color, text-decoration-color, fill, stroke",
       color: "color",
       height: "height",
       "max-height": "max-height",
@@ -1341,7 +1396,24 @@ module.exports = {
   variants: {
     display: ["responsive", "dropdown"],
   },
-  variantOrder: ["first", "last", "odd", "even", "visited", "checked", "empty", "read-only", "group-hover", "group-focus", "focus-within", "hover", "focus", "focus-visible", "active", "disabled"],
+  variantOrder: [
+    "first",
+    "last",
+    "odd",
+    "even",
+    "visited",
+    "checked",
+    "empty",
+    "read-only",
+    "group-hover",
+    "group-focus",
+    "focus-within",
+    "hover",
+    "focus",
+    "focus-visible",
+    "active",
+    "disabled",
+  ],
 
   plugins: [
     plugin(function ({ addComponents, addUtilities }) {
@@ -1353,10 +1425,12 @@ module.exports = {
           transform: "perspective(999px) rotateX(7deg) translate3d(0,-4px,5px)",
         },
         ".transform-dropdown": {
-          transform: "perspective(999px) rotateX(-10deg) translateZ(0) translate3d(0,37px,0)",
+          transform:
+            "perspective(999px) rotateX(-10deg) translateZ(0) translate3d(0,37px,0)",
         },
         ".transform-dropdown-show": {
-          transform: "perspective(999px) rotateX(0deg) translateZ(0) translate3d(0,37px,5px)",
+          transform:
+            "perspective(999px) rotateX(0deg) translateZ(0) translate3d(0,37px,5px)",
         },
         ".flex-wrap-inherit": {
           "flex-wrap": "inherit",
@@ -1401,7 +1475,10 @@ module.exports = {
 
         "h1, h2, h3, h4, h5, h6": {
           "margin-bottom": ".5rem",
-          color: "#344767",
+          color: {
+            light: "#344767",
+            dark: "#dee4ee"
+          },
         },
 
         "h1, h2, h3, h4": {
