@@ -1,15 +1,22 @@
 const popup = document.getElementById('pop-up');
-const newBtn = document.getElementById('new-pop-up-btn');
-const newForm = document.getElementById('new-pop-up-form');
+const buttons = document.querySelectorAll('.pop-up-btn');
 
-newBtn.addEventListener('click', function() {
-    popup.classList.remove('hidden');
-    newForm.classList.remove('hidden');
-});
+buttons.forEach(button => {
+    const form = document.getElementById(button.dataset.popupform);
+    button.addEventListener('click', function() {
+        popup.classList.remove('hidden');
+        form.classList.remove('hidden');
+    });   
 
-popup.addEventListener('click', function(e) {
-    if(!e.target.closest('form')){
+    form.querySelector('.close-form-btn').addEventListener('click', function() {
         popup.classList.add('hidden');
-        newForm.classList.add('hidden');
-    }
+        form.classList.add('hidden');
+    });
+
+    popup.addEventListener('click', function(e) {
+        if(e.target == popup){
+            popup.classList.add('hidden');
+            form.classList.add('hidden');
+        }
+    });
 });
